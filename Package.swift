@@ -1,8 +1,15 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.0
 import PackageDescription
 
-let package = Package(name: "TDBadgedCell")
-
-package.targets = [
-    Target(name: "TDBadgedCell", dependencies: [])
-]
+let package = Package(
+    name: "TDBadgedCell",
+    platforms: [
+        .iOS("9.0")
+    ],
+    products: [
+        .library(name: "TDBadgedCell", targets: ["TDBadgedCell"])
+    ],
+    targets: [
+        .target(name: "TDBadgedCell", dependencies: [])
+    ]
+)

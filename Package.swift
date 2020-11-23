@@ -10,6 +10,6 @@ let package = Package(
         .library(name: "TDBadgedCell", targets: ["TDBadgedCell"])
     ],
     targets: [
-        .target(name: "TDBadgedCell", dependencies: [])
+        .target(name: "TDBadgedCell", dependencies: [], path: "TDBadgedCell"))
     ]
 )
